@@ -6,6 +6,8 @@ Install python3 (latest version), use virtualenv and autoenv:
 ```
 pip3 install virtualenv autoenv
 
+virtualenv env
+
 cd <clone-location>/493project
 
 source env/bin/activate
