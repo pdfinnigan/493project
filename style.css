@@ -23,3 +23,64 @@ body, html {
   font-weight: bold;
   padding: 5px;
 }
+
+.options{
+	left:0px;
+	right: 0px;
+	background-color: white;
+padding: 5px;
+}
+
+.create_a_class{
+	background-color: #66ccff;
+	height: 140px;
+	width: 600px;
+	float: left;
+	border-color: #E9E9E9;
+	border-radius: 30px;
+	border-style: solid;
+	border-width: thick;
+}
+
+.filters{
+	background-color: #66ccff;
+	min-width: 200px;
+	right: 0px;
+	left: 610px;
+	height: 140px;
+	border-color: #E9E9E9;
+	border-radius: 30px;
+	border-style:solid;
+	border-width: thick;
+	position: absolute;
+}
+
+.classes{
+	left: 0px;
+	right: 0px;
+	bottom: 45px;
+	margin-top:	145px;
+	min-height: 800px;
+	background-color: #E9E9E9;
+	border-color: white;
+	border-style:	solid;
+	border-width: thick;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: #66ccff;
+	border-top-width: 3px;
+	border-color: white;
+	border-style: solid;
+	color: white;
+	text-align: center;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	height: 40px;
+	line-height: 40px;
+}
