@@ -6,73 +6,44 @@
   </head>
   <body>
     <div class="header">
-      RateMyClass.com
+      ClassHelper.com
     </div>
-    <div class="options">
-      <div class="create_a_class">
-        <div class="inputs">
-          <p>ADD A CLASS</p><br/>
-          <input required type="text" placeholder="Class Name"/>
-          <br/>
-          <textarea required placeholder="Type description of class here"></textarea>
-          <br/>
-          <input type="submit" val="Add Class to List"/>
-        </div>
-      </div>
-      <div class="filters">
-        <div class = "sorts">
-          <p>SORT BY</p>
-          <br/><input type="button" value="DATE"/>
-          <br/><input type="button" value="RATING"/>
-          <br/><input type="button" value="CLASS NAME"/>
-        </div>
-        <div class = "filters_toggles">
-          <p>FILTER BY</p>
-          <br/><input type="checkbox">Classes I created</input>
-          <br/><input type="checkbox">Classes I rated</input>
-        </div>
-      </div>
-    </div>
+
     <div class="classes">
-      <div class="class">
-          <div class="ratings">
-             <img src="images/thumbsup.png" style="width:30px"/>
-             <p class="score">22</p>
-             <img src="images/thumbsdown.png" style="width:30px"/>
-          </div>
-          <div class="details">
+      <header>CLASSES:</header>
+      <div id="493" class="class active">
             <header>EECS 493</header>
-            <p>This is a class about User Interface Development and I can't think
-                of more to say except that it is the best class you will ever
-                take at the University of Michigan</p>
-          </div>
       </div>
-      <div class="class">
-          <div class="ratings">
-             <img src="images/thumbsup.png" style="width:30px"/>
-             <p class="score">9</p>
-             <img src="images/thumbsdown.png" style="width:30px"/>
-          </div>
-          <div class="details">
+      <div id="376" class="class">
             <header>EECS 376</header>
-            <p>This is a class about Theoretical Math of CompSci and I can't think
-                of more to say except that it is the best class you will ever
-                take at the University of Michigan</p>
-          </div>
       </div>
-      <div class="class">
-          <div class="ratings">
-             <img src="images/thumbsup.png" style="width:30px"/>
-             <p class="score">12</p>
-             <img src="images/thumbsdown.png" style="width:30px"/>
-          </div>
-          <div class="details">
+      <div id="388" class="class">
+            <header>EECS 388</header>
+      </div>
+      <div id="314" class="class">
             <header>EECS 314</header>
-            <p>This is a class about Circuits and I can't think
-                of more to say except that it is the best class you will ever
-                take at the University of Michigan</p>
-          </div>
       </div>
+
+      <div class="chat">
+         <div class="tab active">
+          Chat
+         </div>
+         <div class="tab">
+           Documents
+         </div>
+      </div>
+        <div class="chatview">
+          <div class="messages">
+            <header>EECS 493 CHAT</header>
+          </div>
+          <div class="chatinputs">
+            <input type="text" placeholder="message here"/>
+            <button>SEND</button>
+          </div>
+        </div>
+        <div class="docview">
+          <header>EECS 493 DOCUMENTS</header>
+        </div>
     </div>
     <div class="resources">
       <header>Other Resouces:</header>
@@ -84,7 +55,7 @@
         <br></br>
       <a href="https://advising.engin.umich.edu/">Academic Advising</a>
     </div>
-    <div class="footer"> COPYRIGHT RateMyClass 2018
+    <div class="footer"> COPYRIGHT © RateMyClass 2018
     </div>
   </body>
 </html>

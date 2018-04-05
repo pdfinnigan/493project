@@ -24,112 +24,12 @@ body, html {
   padding: 5px;
 }
 
-.options{
-	left:0px;
-	right: 0px;
-	background-color: white;
-	padding: 5px;
-	min-height: 30px;
-}
-
-.create_a_class{
-	background-color: #66ccff;
-	min-height: 140px;
-	width: 600px;
-	float: left;
-	border-color: #E9E9E9;
-	border-radius: 30px;
-	border-style: solid;
-	border-width: thick;
-}
-.inputs{
-	padding: 2px;
-
-}
-
-.inputs p{
-	line-height: 0px;
-	text-align: center;
-	text-decoration: underline;
-	font-weight: bold;
-	color: white;
-}
-
-.inputs input[type="text"], .inputs textarea, .inputs input[type="submit"] {
-	padding: 8px 12px;
-	margin-left: 30px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 0px;
-  box-sizing: border-box;
-}
-
-.inputs textarea{
-	min-width: 400px;
-	min-height: 80px;
-}
-
-.filters{
-	background-color: #66ccff;
-	min-width: 430px;
-	min-height: 200px;
-	right: 0px;
-	left: 610px;
-	border-color: #E9E9E9;
-	border-radius: 30px;
-	border-style:solid;
-	border-width: thick;
-	position: absolute;
-}
-
-.sorts{
-	position: absolute;
-	left: 10px;
-	height:180px;
-	max-width: 220px;
-	min-width: 80px;
-	width: 220px;
-	float: left;
-	top: 5px;
-	color: white;
-	text-align: center;
-}
-
-.sorts p{
-	text-decoration: underline;
-	font-weight: bold;
-}
-
-.filters_toggles{
-	position: absolute;
-	right: 10px;
-	max-width: 220px;
-	min-width: 80px;
-	width: 220px;
-	height: 180px;
-	top: 5px;
-	color: white;
-}
-
-.filters_toggles input[type="checkbox"]{
-	text-decoration: none;
-	text-align: left;
-	margin-left: 30px;
-}
-
-.filters_toggles p{
-	text-align: center;
-	text-decoration: underline;
-	font-weight: bold;
-}
-
 .classes{
-	float: left;
 	left: 0px;
-	right: 0px;
+	right: 100px;
 	bottom: 200px;
 	margin-top:	0px;
-	min-height: 400px;
+	min-height: 525px;
 	background-color: #E9E9E9;
 	border-color: white;
 	border-style:	solid;
@@ -138,15 +38,24 @@ body, html {
 	padding-bottom: 50px;
 }
 
+.classes header{
+	margin-left: 20px;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
 .class{
 	background-color: white;
+	width: 130px;
 	margin-top: 10px;
 	margin-left: 10px;
 	margin-right: 300px;
-	min-height: 130px;
+	min-height: 20px;
 	border: solid;
 	border-radius: 20px;
 	border-color: black;
+	border-width: thin;
 }
 
 .class header{
@@ -156,27 +65,108 @@ body, html {
 	margin-right: 5px;
 }
 
-.class p{
-	margin-left: 15px;
-	margin-right: 5px;
+.class.active{
+	background-color: yellow;
+	border-width: thick;
 }
 
-.details{
-	margin-left: 50px;
+.chat{
+	position: fixed;
+	max-width: 800px;
+	min-height: 400px;
+	background-color: gray;
+	border-style: solid;
+	border-radius: 10px;
+	left: 160px;
+	right: 250px;
+	top:100px;
+	bottom: 50px;
 }
 
-.ratings{
+.messages{
+	position: fixed;
+	max-width: 800px;
+	min-height: 400px;
+	background-color: white;
+	border-style: solid;
+	border-radius: 10px;
+	left: 165px;
+	right: 260px;
+	top:110px;
+	bottom: 120px;
+}
+
+.chatview{
+	display: block;
+}
+
+.docview{
+	display: none;
+	position: fixed;
+	max-width: 800px;
+	min-height: 400px;
+	background-color: white;
+	border-style: solid;
+	border-radius: 10px;
+	left: 165px;
+	right: 260px;
+	top:110px;
+	bottom: 65px;
+}
+
+.chatinputs{
+	position: fixed;
+	max-width: 800px;
+	height: 50px;
+	background-color: white;
+	border-style: solid;
+	border-radius: 10px;
+	left: 165px;
+	right: 260px;
+	bottom: 60px;
+}
+
+.chatinputs input[type="text"]{
+	margin-top: 8px;
+	margin-left: 5px;
+	height: 30px;
+	width: 500px;
+}
+
+.chatinputs button{
+	position: static;
+	width: 100px;
+	height: 30px;
+
+}
+
+.tab{
+	position: relative;
+	bottom: 50px;
+	background-color: white;
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+	border-radius: 10px;
+	width: 200px;
+	height: 45px;
 	float: left;
-	margin-left: 15px;
-	margin-top: 2px;
-	margin-bottom: 2px;
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.tab.active{
+	background-color: yellow;
+	border-width: thick;
 }
 
 .resources{
 	position: fixed;
 	background-color: white;
-	top:270px;
-	width: 260px;
+	top:60px;
+	width: 210px;
 	right: 20px;
 	height: 260px;
 	border: solid;
